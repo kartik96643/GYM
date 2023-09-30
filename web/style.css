@@ -1,0 +1,1699 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    
+    height: 95vh;
+    /* width: 100vw; */
+    /* background-color: #263238; */
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(man.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+
+}
+
+  .logo,
+ .navbar a{
+    color: rgb(250,101,25);
+    margin-top: 0.2em;
+    /* letter-spacing: .1rem; */
+}
+
+.navbar{
+    padding: .6em;
+    
+}
+
+ /* .navbar i{
+    margin-top: .4em;
+    margin-left: .3em;
+ }    */
+
+.navbar a{
+    padding-bottom: .3rem;
+}
+span{
+    margin: 1.5em;
+    color: azure;
+}
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+.navbar .navitems{
+    float: right;
+    
+}
+.navbar .navitem{
+    display: inline-block;
+    padding: 1.5em;
+    letter-spacing: 0.1em;
+    /* font-size: larger; */
+    margin-top: 1.2em;
+
+    
+}
+ .navbar ul.navitems li.navitem a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.navbar a:link,
+.navbar a:visited{
+    color: rgb(250,101,25);
+}
+ 
+.navbar a:hover{
+    border-bottom: 1px solid rgb(250,101,25);
+}
+
+/* ################ HEADER CONTENT STYLING ################### */
+
+
+.header-content{
+   color: aliceblue;
+     /* border: 2px solid red; */
+     /* height: 80%; */
+     /* padding: 3em; */
+     /* margin: 5em; */
+     /* margin-top: 100px ; */
+    font-size: 2.5rem;
+    /* margin: auto; */
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+    
+    position: relative;
+    top: 30%;
+    text-align: center; 
+    
+
+    
+    
+
+
+}
+ h2 span{
+    /* color: rgb(250,101,25); */
+    padding: 0em;
+    margin: auto;
+    /* word-spacing: 0em; */
+}
+
+ h2:last-child{
+/* border: 2px solid red; */
+padding-left: .3em;
+    
+ }
+
+  .change-text::after{
+    content: "Shape it up";
+    animation-name: change;
+    animation-duration: 3.5s ;
+    /* animation-delay:2s ; */
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards ; */
+    /* animation-direction: reverse; */
+
+ }
+
+ @keyframes change{
+    0%{
+        content: "Shape it up";
+      }
+    25%{
+        content: "See the difference";
+      }
+    50%{
+        content: "Feel confident";
+    }
+}
+/* ######################## utility classes ########################## */
+
+
+.container{
+    max-width: 1300px;
+    width: 80vw;
+    margin: auto;
+}
+
+.text-orange{
+    color: rgb(250,101,25);
+    }
+.text-light{
+    color: white;
+}
+.text-dark{
+    color: black;
+}
+
+.btn{
+    border: 2px solid rgb(250,101,25);
+    display: inline-block;
+    font-size: medium;
+    margin-top: 1em;
+    font-weight: 500;
+    border-radius: 3rem;
+    padding: .8em;
+    color: rgb(250,101,25);
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+   
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+
+
+/* ################# SHOWCASE SECTION STYLING ########################## */
+
+
+.showcase{
+    background: #ddd;
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.row{
+    /* border: 2px solid red; */
+    height: 350px;
+    box-shadow:0px 0px 20px 0px #999;
+    width: 100%;
+
+}
+
+.row1, .row2{
+    margin-bottom: 7em;
+}
+
+.row1 .imgbox, .row2 .textbox, .row3 .imgbox{
+    float: left;
+    width: 50%;
+    /* border: 4px solid green; */
+    height: 100%;
+}
+
+.row2 .imgbox, .row1 .textbox, .row3 .textbox{
+    float: right;
+    width: 50%;
+    /* border: 4px solid green; */
+    height: 100%;
+}
+
+.row1 .textbox, .row2 .textbox, .row3 .textbox{
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.row1 .imgbox{
+    background-image: url(girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.row2 .imgbox{
+    background-image: url(boy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row3 .imgbox{
+    background-image:linear-gradient(rgba(0,0,0,.1) ,rgba(0,0,0,.1)), url(zumba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.showcase .row h1{
+    /* border: 1px solid red; */
+    text-align: left;
+    font-size: x-large;
+    padding: .1em ;
+    margin: 0em auto;
+    letter-spacing: .2em;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight:500;
+    /* animation-name: text;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0; */
+
+
+}
+/* @keyframes text{
+    from{font-size: 0px;}
+    to{font-size: x-large;
+    opacity: 1;}
+    
+} */
+
+
+
+.showcase .row p{
+    /* border: 1px solid red; */
+    text-align: left;
+    font-size: small;
+    padding: .1em ;
+    
+}
+
+.btn:hover{
+
+    background-color: rgb(247,187,158);
+    /* animation-name: color-change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; */
+
+}
+
+/* @keyframes color-change{
+    from{background-color:"white"}
+    to{background-color: rgb(247, 187, 158);}
+} */
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ################ feature section styling ######################### */
+
+.feature{
+    background-color: #fff;
+    height: 300px;
+    padding: 10rem 0;
+    margin-bottom: 7em;
+}
+
+.box-wrapper{
+    /* width: 100%; */
+    /* text-align: center; */
+    /* border: 2px solid green; */
+    box-shadow: 0px 0px 20px 0px #777;
+}
+
+.box{
+    width: 33.333333%;
+    float: left;
+    height: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding:1rem 2rem;
+    text-align: center;
+
+}
+
+.box2{
+    /* height: 100%; */
+    background-color:rgb(250,101,25);
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box h2{
+    font-weight: 450;
+    letter-spacing: .1em;
+    
+}
+
+.box1, .box3{
+    background-color: #263238;
+}
+
+.box p{
+    font-size: 500;
+}
+
+
+/* ################################ footer section styling ############################### */
+
+.footer{
+ 
+    height: 170px;
+    background-color: #263238;
+
+}
+
+.socialmedialinks{
+    /* border: 2px solid white; */
+    text-align: center;
+    /* margin-top: 3em; */
+    /* padding: 2em 0em; */
+}
+
+.socialmedialinks i{
+    margin: 2rem;
+
+}
+.socialmedialinks p{
+    margin-top: .1em;
+    font-size: medium;
+}
+
+a i:hover{
+    color: #fff;
+}
+
+/* ##################################### ABOUT PAGE STYLING ######################################### */
+
+.about{
+
+    padding: 2em 0em;
+
+}
+
+.about h1{
+
+    /* font-size: x-large; */
+    /* border-bottom: 4px solid rgb(250,101,25); */
+    font-weight: 500;
+    letter-spacing: .1em;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+
+}
+@keyframes text{
+    from{font-size: 0px;}
+    to{font-size: x-large;
+    opacity: 1;}
+    
+}
+
+.about-h1::after{
+    content: "";
+    display: block;
+    border: 3px solid rgb(250,101,25);
+    width: 0%;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes border{
+    from{width:0%}
+    to{width:100%}
+}
+
+.about p{
+
+    padding: 2em 0em;
+    font-size: 12px;
+    
+}
+
+.pblock{
+    /* border: 2px solid red; */
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+
+}
+
+.about .tick1{
+    /* display: inline-block; */
+    float: left;
+    /* border: 1px solid green; */
+    width: 50%;
+    /* padding-left: 1.5em; */
+    font-size: 12px;
+    height: 100%;
+    
+
+}
+
+.about .tick2{
+    /* display: inline-block; */
+    float: right;
+    /* border: 1px solid yellow; */
+    width: 50%;
+    /* padding-left: 1.5em;    */
+    font-size: 12px; 
+    height: 100%;
+    
+
+}
+
+ .pblock::after{ 
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+.pblock li{
+    list-style: none;
+    line-height: 2em;
+}
+ 
+.pblock i{
+    
+    padding-right: 2em;
+    
+}
+
+.counts{
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 60%;
+    margin-top: 2em; 
+    margin-left: 20%;
+    margin-top: 3em;
+}
+
+.counts .items{
+    /* border: 1px solid green; */
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    
+}
+
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.counts span{
+    font-size: x-large;
+    font-weight: 700;
+    
+}
+
+.counts p{
+    font-size: medium;
+    padding-top:  0.5em;
+    font-weight: 400;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+.last-block{
+    background-color: rgb(250,101,25);
+    width: 65%;
+    height: 80px;
+    margin-left: 18%;
+}
+
+.last-block p{
+    padding-left: 3em;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: .3em;
+    padding-top: 1.3em;
+    /* padding-bottom: .5em; */
+}
+
+.last-block a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-right: .7em;
+    padding-left:.7em ; 
+    transition-property:color border-color;
+    transition-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+ .last-block a:hover{
+
+    color: #263238;
+    border-color: #263238;
+
+}
+
+
+
+/* ########################################### CONTACT US PAGE STYLING ############################################ */
+.contact-section{
+    background-color: #ddd;
+    height: 85vh;
+}
+
+.contact-section .info-block{
+    /* border: 3px solid yellow; */
+    height: 80vh;
+    /* margin-top: 5em; */
+}
+.contact-section .info-block .contact-info, .form-block{
+    background-color: #fff;
+    width: 48%;
+    margin-top: 5em;
+    height: 90%;
+
+}
+.contact-info{
+    /* display: inline-block; */
+    /* border: 2px solid red; */
+    float: left;
+}
+
+.info-block h1{
+    font-size: medium;
+    padding: 1em 1em 1em .5em;
+    color: #263238;
+    font-weight: 500;
+    letter-spacing: .2em;
+
+
+}
+
+.info-block p{
+    font-size: small;
+    padding:0em 1em 0em 1em ;
+}
+
+.info-block i{
+    margin-right: .5em;
+}
+
+.info-block .img-block img{
+    width: 70%;
+    height: 300px;
+    padding: 2em 1em 1em 2em;
+    max-width: 80%;
+    max-height: 310px;
+    /* object-fit: cover; */
+    
+}
+    
+.contact-section .info-block .form-block{
+    /* display: inline; */
+    float: right;
+    /* border: 2px solid green; */
+    width: 45%;
+    
+    
+    /* padding-top: 2em; */
+}
+
+ .contact-section .info-block::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+    
+.info-block .form-block h1{
+    /* font-size: medium; */
+    font-weight: 600;
+    letter-spacing: .4em;
+    animation-name: textt;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+
+}
+@keyframes textt{
+    from{font-size: 0px;}
+    to{font-size: large;
+    opacity: 1;}
+    
+}
+
+
+.info-block .form-block h1::after{
+    content: "";
+    display: block;
+    border: 2px solid rgb(250,101,25);
+    width:0%;
+    margin-top: .2em;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes border{
+    from{width:0%}
+    to{width:100%;}
+}
+
+.info-block .form-block p{
+    padding-top: .1em ;
+    padding-left: .5em;
+    padding-bottom: 1em;
+}
+
+.info-block .form-block label{
+    display: inline-block;
+    padding: .5em 0em 0em .5em;
+    font-size: small;
+}
+
+.info-block .form-block label::after{
+    content: "*";
+    color: rgb(250,101,25);
+}
+
+.info-block .form-block input{
+    height: 25px;
+    margin-left: .5em;
+    width: 80%;
+
+}
+.info-block .form-block .messageinput{
+    height: 190px;
+    padding: 0%;
+}
+
+
+.info-block .form-block .submit-btn{
+    margin-left: 35%;
+    height: 35px;
+    width: 30%;
+    margin-top: 2em;
+    background-color: rgb(250,101,25);
+    margin-bottom: 2em;
+    color: #fff;
+    border: 1px solid rgb(250,101,25);
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: .2em;
+
+}
+
+
+/* ############################################# TRAINER SECTION STYLING ################################################ */
+
+.trainer-box{
+    /* border: 2px solid red; */
+    margin-top: 5em;
+    margin-left: 11%;
+    height: 400px;
+    max-height: 500px;
+    max-width: 90%;
+    width: 80%;
+
+}
+
+.image-box{
+    /* border: 3px solid green; */
+    float: left;
+    height: 100%;
+    width: 49.5%;
+}
+
+.intro-box{
+    /* border: 3px solid yellow; */
+    float: right;
+    height: 100%;
+    width: 49.5%;
+    /* background-color:  */
+}
+
+.trainer-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-box h1{
+    /* border: 1px solid blue; */
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: .1em;
+    padding-left: 1em;
+    color: #263238;
+    /* background-color: rgb(250,101,25); */
+    /* animation-name: textt;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+
+}
+@keyframes textt{
+    from{font-size: 0px;}
+    to{font-size: large;
+    opacity: 1;}
+    
+} */
+}
+
+.intro-box h1::after{
+    content: "";
+    border-bottom: 4px solid rgb(250,101,25);
+    display: block;
+    width: 0%;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes border{
+    from{width:0%}
+    to{width:100%}
+}
+
+
+
+.intro-box p{
+    /* border: 2px solid red; */
+    margin-top: 1em;
+    padding-left: 1em;
+    font-size: small;
+    letter-spacing: .1em;
+    max-height: 70%;
+}
+
+.trainer-id{
+    /* border: 2px solid pink; */
+    /* padding: 2em; */
+    background-color: rgb(250,101,25);
+    height: 23%;
+    margin-top: 1.19em;
+    margin-left: 1em;
+    width: 100%;
+    
+}
+
+.trainer-id p{
+    text-align: center;
+}
+
+.trainer-id i{
+/* text-align: center; */
+margin: 2.5rem 5rem;
+color: #263238;
+padding-left: 5rem;
+}
+
+.trainer-id i:hover{
+    color: #fff;
+}
+
+
+
+
+/* ################################################### GALLERY SECTION STYLING ################################################## */
+
+.gallery-section{
+    /* border: 2px solid red; */
+    padding-top: 2rem;
+}
+
+.gallery-section h1{
+    /* border: 2px solid yellow; */
+    /* font-size: x-large; */
+    /* padding-left: 2rem; */
+    
+    font-weight: 400;
+    letter-spacing: .2em;
+    
+    /* background-color: rgb(250,101,25); */
+    margin-bottom: 4rem;
+    color: #263238;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+
+}
+@keyframes text{
+    from{font-size: 0px;
+        display: none;}
+    to{font-size: x-large;
+    display: block;
+opacity: 1;}
+    
+}
+
+.gallery-section h1::after{
+
+    content: "";
+    display: block;
+    border-bottom: 5px solid rgb(250,101,25);
+    width: 0%;
+    padding-bottom: 1rem;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes border{
+    from{width:0%}
+    to{width:100%}
+}
+
+
+
+
+.roww{
+    /* border: 2px solid red; */
+    height: 350px;
+    box-shadow:0px 0px 20px 0px #999;
+    width: 100%;
+
+}
+
+.roww1, .roww2{
+    margin-bottom: 5rem;
+}
+
+.roww1 .imgbox1, .roww2 .imgbox1, .roww3 .imgbox1{
+    float: left;
+    width: 49.8%;
+    /* border: 4px solid green; */
+    height: 100%;
+}
+
+.roww2 .imgbox2, .roww1 .imgbox2, .roww3 .imgbox2{
+    
+    float: right;
+    width: 49.8%;
+    /* border: 4px solid green; */
+    height: 100%;
+}
+
+
+
+.roww1 .imgbox1{
+    background-image: url(legpress.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.roww2 .imgbox1{
+    background-image: url(1150795.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roww3 .imgbox1{
+    background-image:linear-gradient(rgba(0,0,0,.1) ,rgba(0,0,0,.1)), url(pose.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roww1 .imgbox2{
+    background-image: url(inclinechestpress.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roww2 .imgbox2{
+    background-image: url(tricepanil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roww3 .imgbox2{
+    background-image: url(bittubicep.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic-section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ################################# MEDIA QUERIES ######################################### */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+
+
+    .navbar .logo,
+    .navbar .navitems{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* .navbar i{
+        border:2px solid #fff;
+        padding-top: 8rem;
+    } */
+
+    .header-content{
+        /* border: 2px solid white; */
+        text-align: center;
+    }
+
+    /* ################################################ SHOWCASE SECTION MEDIA QUERY ######################################## */
+
+    .showcase{
+        height: auto;
+    }
+
+     .row{
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        
+    }
+
+     .row .imgbox
+    {
+        float: none;
+        width: auto;
+        text-align: center;
+        height: 300px;
+    } 
+    .row .textbox{
+        text-align: center;
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .row .textbox h1{
+        text-align: center;
+    }
+
+    /* ######################################## FEATURE SECTION MEDIA QUERY ######################################### */
+    .feature{
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+     .box-wrapper .box1, .box-wrapper .box2, .box-wrapper .box3 {
+        float: none;
+        /* display: block; */
+        height: auto;
+        width: 100%;
+        box-shadow: 0px 0px 20px 0px #777;
+    }
+
+     .box1 , .box2{
+        margin-bottom: 4rem;
+    }
+
+    /* ############################################## GALLERY SECTION MEDIA QUERY #################################### */
+
+    .gallery-section{
+        height: auto;
+    }
+
+    .roww1, .roww2{
+        margin-bottom: 8rem;
+    }
+
+    .roww .imgbox1, .roww .imgbox2{
+        float: none;
+        display: block;
+        width: auto;
+        height: 200px;
+        margin-bottom: 1rem;
+        
+    }
+
+    /* ######################################## TRAINER SECTION MEDIA QUERY #########################################  */
+
+    .trainer-section{
+        height: auto;
+    }
+
+    .trainer-box .image-box{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .trainer-box .intro-box{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-box p, .intro-box h1{
+        padding-left: 0px;
+        /* font-size: small; */
+        text-align: center;
+    }
+
+    .trainer-id{
+        width: 100%;
+        height: auto;
+    }
+
+    .trainer-id i{
+        /* text-align: center; */
+        margin: 2rem 3rem 2rem 3rem;
+        /* margin-right: 1rem; */
+    }
+
+    .trainer-id p{
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+
+    /* ######################################## ABOUT US MEDIA QUERY ##################################### */
+
+    .about{
+        height: auto;
+        
+    }
+
+    .about p, .about h1{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pblock{
+        height: auto;
+        width: 100%;
+
+    }
+
+    .pblock .tick1, .pblock .tick2{
+        float: none;
+        text-align: center;
+        height: auto;
+        
+        
+    }
+
+    .counts .items{
+        float: none;
+        /* border: 2px solid green; */
+        width: 100%;
+        height: auto;
+        /* text-align: center; */
+    }
+
+     .counts .items p{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .last-block{
+        height: auto;
+        width: 100%;
+        /* border: 4px solid green; */
+        margin: auto;
+    }
+
+    .last-block p{
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .last-block span{
+        margin: 4rem;
+        width: 100%;
+        height: auto;
+    }
+
+    /* ###################################### CONTACT US MEDIA QUERY ################################## */
+.contact-section{
+    background-color: #ddd;
+    height: auto;
+    padding: 2rem;
+}
+    .contact-section .info-block{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+
+     .info-block .contact-info p{
+        width: auto;
+        height: auto;
+    }
+    .contact-section .info-block .contact-info{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .contact-section .info-block .form-block{
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+/* #################################################################################################################################### */
+
+
+@media (min-width:501px) and (max-width:768px){
+
+html{
+    font-size: 59%;
+}
+
+
+.navbar .logo,
+.navbar .navitems{
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* .navbar i{
+    border:2px solid #fff;
+    padding-top: 8rem;
+} */
+
+.header-content{
+    /* border: 2px solid white; */
+    text-align: center;
+}
+
+/* ################################################ SHOWCASE SECTION MEDIA QUERY ######################################## */
+
+.showcase{
+    height: auto;
+}
+
+ .row{
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    
+}
+
+ .row .imgbox
+{
+    float: none;
+    width: auto;
+    text-align: center;
+    height: 300px;
+} 
+.row .textbox{
+    text-align: center;
+    float: none;
+    height: auto;
+    width: 100%;
+}
+
+.row .textbox h1{
+    text-align: center;
+}
+
+/* ######################################## FEATURE SECTION MEDIA QUERY ######################################### */
+.feature{
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.box-wrapper{
+    box-shadow: none;
+}
+ .box-wrapper .box1, .box-wrapper .box2, .box-wrapper .box3 {
+    float: none;
+    /* display: block; */
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px #777;
+}
+
+ .box1 , .box2{
+    margin-bottom: 4rem;
+}
+
+/* ############################################## GALLERY SECTION MEDIA QUERY #################################### */
+
+.gallery-section{
+    height: auto;
+}
+
+.roww1, .roww2{
+    margin-bottom: 8rem;
+}
+
+.roww .imgbox1, .roww .imgbox2{
+    float: none;
+    display: block;
+    width: auto;
+    height: 200px;
+    margin-bottom: 1rem;
+    
+}
+
+/* ######################################## TRAINER SECTION MEDIA QUERY #########################################  */
+
+.trainer-section{
+    height: auto;
+}
+
+.trainer-box .image-box{
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.trainer-box .intro-box{
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.intro-box p, .intro-box h1{
+    text-align: center;
+}
+
+.trainer-id{
+    width: 100%;
+    height: auto;
+}
+
+.trainer-id i{
+    /* text-align: center; */
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.trainer-id p{
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+/* ######################################## ABOUT US MEDIA QUERY ##################################### */
+
+.about{
+    height: auto;
+    
+}
+
+.about p, .about h1{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.pblock{
+    height: auto;
+    width: 100%;
+
+}
+
+.pblock .tick1, .pblock .tick2{
+    float: none;
+    text-align: center;
+    height: auto;
+    
+    
+}
+
+.counts .items{
+    float: none;
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+}
+
+ .counts .items p{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.last-block{
+    height: auto;
+    width: 100%;
+    /* border: 4px solid green; */
+    margin: auto;
+}
+
+.last-block p{
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.last-block span{
+    margin: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+/* ###################################### CONTACT US MEDIA QUERY ################################## */
+.contact-section{
+background-color: #ddd;
+height: auto;
+padding: 2rem;
+}
+.contact-section .info-block{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+ .info-block .contact-info p{
+    width: auto;
+    height: auto;
+}
+.contact-section .info-block .contact-info{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.contact-section .info-block .form-block{
+    float: none;
+    width: 100%;
+    height: auto;
+
+}
+
+.form-block label, input{
+    margin-bottom: 1rem;
+}
+
+
+}
+
+/* ########################################################################################################################################### */
+
+
+@media (min-width:769px) and (max-width:1287px){
+
+   html{
+    font-size: 60%;
+        
+    }
+
+    .navbar .logo,
+    .navbar .navitems{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* .navbar i{
+        border:2px solid #fff;
+        padding-top: 8rem;
+    } */
+    
+    .header-content{
+        /* border: 2px solid white; */
+        text-align: center;
+    }
+    
+    /* ################################################ SHOWCASE SECTION MEDIA QUERY ######################################## */
+    
+    .showcase{
+        height: auto;
+    }
+    
+     .row{
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        
+    }
+    
+     .row .imgbox
+    {
+        float: none;
+        width: auto;
+        text-align: center;
+        height: 300px;
+    } 
+    .row .textbox{
+        text-align: center;
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+    
+    .row .textbox h1{
+        text-align: center;
+    }
+    
+    /* ######################################## FEATURE SECTION MEDIA QUERY ######################################### */
+    .feature{
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .box-wrapper{
+        box-shadow: none;
+    }
+     .box-wrapper .box1, .box-wrapper .box2, .box-wrapper .box3 {
+        float: none;
+        /* display: block; */
+        height: auto;
+        width: 100%;
+        box-shadow: 0px 0px 20px 0px #777;
+    }
+    
+     .box1 , .box2{
+        margin-bottom: 4rem;
+    }
+    
+    /* ############################################## GALLERY SECTION MEDIA QUERY #################################### */
+    
+    .gallery-section{
+        height: auto;
+    }
+    
+    .roww1, .roww2{
+        margin-bottom: 8rem;
+    }
+    
+    .roww .imgbox1, .roww .imgbox2{
+        float: none;
+        display: block;
+        width: auto;
+        height: 200px;
+        margin-bottom: 1rem;
+        
+    }
+    
+    /* ######################################## TRAINER SECTION MEDIA QUERY #########################################  */
+    
+    .trainer-section{
+        height: auto;
+    }
+    
+    .trainer-box .image-box{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    
+    .trainer-box .intro-box{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    
+    .intro-box p, .intro-box h1{
+        text-align: center;
+    }
+    
+    .trainer-id{
+        width: 100%;
+        height: auto;
+    }
+    
+    .trainer-id i{
+        text-align: center;
+        margin-left: 6rem;
+        margin-right: 2rem;
+    }
+    
+    .trainer-id p{
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+    
+    /* ######################################## ABOUT US MEDIA QUERY ##################################### */
+    
+    .about{
+        height: auto;
+        
+    }
+    
+    .about p, .about h1{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .pblock{
+        height: auto;
+        width: 100%;
+    
+    }
+    
+    .pblock .tick1, .pblock .tick2{
+        float: none;
+        text-align: center;
+        height: auto;
+        
+        
+    }
+    
+    .counts .items{
+        float: none;
+        /* border: 2px solid green; */
+        width: 100%;
+        height: auto;
+        /* text-align: center; */
+    }
+    
+     .counts .items p{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .last-block{
+        height: auto;
+        width: 100%;
+        /* border: 4px solid green; */
+        margin: auto;
+    }
+    
+    .last-block p{
+        text-align: center;
+        padding-left: 1rem;
+    }
+    
+    .last-block span{
+        margin: 4rem;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* ###################################### CONTACT US MEDIA QUERY ################################## */
+    .contact-section{
+    background-color: #ddd;
+    height: auto;
+    padding: 2rem;
+    }
+    .contact-section .info-block{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    
+     .info-block .contact-info p{
+        width: auto;
+        height: auto;
+    }
+    .contact-section .info-block .contact-info{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    
+    .contact-section .info-block .form-block{
+        float: none;
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .form-block label, input{
+        margin-bottom: 1rem;
+    }
+    
+    
+}
+    
+
+@media(orientation:landscape) and (max-height:500px){
+
+.header{
+    height: 95vmax;
+}
+
+
+}
